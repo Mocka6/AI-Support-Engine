@@ -2,7 +2,7 @@
    ## Integrantes
   Janeth Cabrera Arguelles
   Concepcion Guadalupe Paniagua Gonzalez
-  Jarumi Guadaluoe Flores Osorio
+  Jarumi Guadalupe Flores Osorio
 
    **Universidad Tecnológica de Tehuacán.** Reto práctico: AI Support Engine.
 
