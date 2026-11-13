@@ -1,4 +1,15 @@
 # AI Support Engine
+   ## Integrantes
+  Janteh Cabrera Arguelles
+  Concepcion Guadalupe Paniagua Gonzalez
+  Jarumi Guadaluoe Flores Oosorio
+
+   **Universidad Tecnológica de Tehuacán.** Reto práctico: AI Support Engine.
+
+   ## Estado del avance (entrega 1)
+   - Motor tradicional y API funcionando y probados (85% en los casos de referencia).
+   - Motor generativo implementado; pruebas con modelo real pendientes para la entrega 2.
+   - Pendiente: evidencias completas, tabla comparativa final y conclusión técnica.
 
 Clasificador de solicitudes de soporte (ACCESS / BUG / FEATURE / SECURITY + prioridad) con dos motores que comparten el mismo contrato de respuesta:
 
