@@ -1,8 +1,8 @@
 # AI Support Engine
    ## Integrantes
-  Janteh Cabrera Arguelles
+  Janeth Cabrera Arguelles
   Concepcion Guadalupe Paniagua Gonzalez
-  Jarumi Guadaluoe Flores Oosorio
+  Jarumi Guadaluoe Flores Osorio
 
    **Universidad Tecnológica de Tehuacán.** Reto práctico: AI Support Engine.
 
