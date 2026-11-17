@@ -62,4 +62,8 @@ Errores: `400` solicitud inválida · `413` payload > 10 KB · `502` proveedor c
 - Salida del modelo validada (categoría, prioridad, tipos); si falla, se reintenta una vez y luego se devuelve 502.
 
 ## Resultados
-Ver `results.md` (generado por `npm run compare`). Pega aquí la tabla y tu conclusión (máx. 150 palabras).
+Se ejecutaron 13 casos (normales, ambiguos y adversarios) contra una clasificación de referencia definida antes de correr los motores. Evidencias de ejecución en la carpeta `evidencias/`.
+
+
+## Conclusión técnica
+El motor tradicional obtuvo 85 % de aciertos en categoría y prioridad (11 de 13), frente a 46 % del generativo (6 de 13); en categoría sola, el generativo logró 92 % contra 85 %. Ambos cumplieron el formato en el 100 % de los casos. El tradicional fue más preciso porque sus reglas fijan la prioridad de forma determinista y es reproducible; falló en los casos ambiguos, donde no reconoce frases fuera de sus palabras clave. El generativo entendió mejor el contexto y resolvió algunos casos ambiguos, pero tendió a subir la prioridad y, ante la inyección, bajó la prioridad de HIGH a MEDIUM, aunque mantuvo SECURITY y la revisión humana que el código fuerza. Para este problema, el tradicional funcionó mejor en conjunto; lo ideal es combinarlos: el generativo para categoría y respuesta, y reglas para prioridad y seguridad.
