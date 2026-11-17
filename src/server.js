@@ -12,13 +12,17 @@ const send = (res, code, obj) => {
 
 function readBody(req) {
   return new Promise((resolve, reject) => {
-    let size = 0; const chunks = [];
+    let size = 0; const chunks = []; let tooBig = false;
     req.on('data', (c) => {
+      if (tooBig) return;
       size += c.length;
-      if (size > MAX_BODY) { reject(Object.assign(new Error('Payload demasiado grande'), { status: 413 })); req.destroy(); }
+      if (size > MAX_BODY) { tooBig = true; chunks.length = 0; }
       else chunks.push(c);
     });
-    req.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
+    req.on('end', () => {
+      if (tooBig) return reject(Object.assign(new Error('Payload demasiado grande'), { status: 413 }));
+      resolve(Buffer.concat(chunks).toString('utf8'));
+    });
     req.on('error', reject);
   });
 }
