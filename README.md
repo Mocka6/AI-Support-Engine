@@ -6,14 +6,15 @@
 
    **Universidad Tecnológica de Tehuacán.** Reto práctico: AI Support Engine.
 
-   ## Estado del avance (entrega 1)
+   ## Estado del avance (entrega 2)
    - Motor tradicional y API funcionando y probados (85% en los casos de referencia).
-   - Motor generativo implementado; pruebas con modelo real pendientes para la entrega 2.
-   - Pendiente: evidencias completas, tabla comparativa final y conclusión técnica.
+   - Motor generativo probado con modelo real (46 % en categoría+prioridad, 92 % solo categoría).
+   - Nuevo: tercer motor `ml` (TF-IDF + Regresión Logística) en un microservicio Python.
 
-Clasificador de solicitudes de soporte (ACCESS / BUG / FEATURE / SECURITY + prioridad) con dos motores que comparten el mismo contrato de respuesta:
+Clasificador de solicitudes de soporte (ACCESS / BUG / FEATURE / SECURITY + prioridad) con tres motores que comparten el mismo contrato de respuesta:
 
 - **traditional**: reglas ponderadas por palabras clave (sin IA generativa).
+- **ml**: TF-IDF + Regresión Logística (scikit-learn) en un microservicio Python/FastAPI; Node lo consume por HTTP.
 - **generative**: LLM real (Anthropic API u Ollama local) que devuelve JSON, validado antes de responder.
 
 ## Requisitos
@@ -53,7 +54,26 @@ Errores: `400` solicitud inválida · `413` payload > 10 KB · `502` proveedor c
 | `src/generative.js` | Cliente LLM, timeout, validación de JSON, 1 reintento |
 | `src/schema.js` | Contrato y validadores |
 | `src/security.js` | Detección heurística de prompt injection |
+| `src/ml.js` | Cliente del microservicio ML (categoría) + prioridad por reglas |
+| `ml_service/` | Microservicio Python: dataset, entrenamiento y API `/predict` |
 | `test/compare.js` | Pruebas comparativas con clasificación de referencia |
+
+## Microservicio ML (Python)
+
+```bash
+cd ml_service
+pip install -r requirements.txt
+python generate_dataset.py   # crea tickets.csv (200 registros: message,category)
+python train.py              # entrena, imprime classification_report y guarda model.joblib
+python -m uvicorn app:app --port 8000   # dejar corriendo
+```
+
+Luego, en otra terminal, `npm start` y usar `"mode": "ml"`. `npm run compare` incluye el modo ml si el servicio está activo.
+
+- `POST /predict` devuelve `{"category": "...", "confidence": 0.93}`; `GET /health`.
+- El modelo solo predice la **categoría**; prioridad y respuesta salen de las reglas del motor tradicional.
+- Confianza < 0.5, SECURITY o prioridad CRITICAL activan `requiresHumanReview: true`. Si el servicio no responde, la API devuelve 502.
+- `tickets.csv` es **sintético** (generado con plantillas): el 100 % del `classification_report` no refleja desempeño real.
 
 ## Seguridad
 - La clave solo se lee de variables de entorno; los errores al cliente nunca incluyen headers ni claves.
@@ -66,4 +86,5 @@ Se ejecutaron 13 casos (normales, ambiguos y adversarios) contra una clasificaci
 
 
 ## Conclusión técnica
-El motor tradicional obtuvo 85 % de aciertos en categoría y prioridad (11 de 13), frente a 46 % del generativo (6 de 13); en categoría sola, el generativo logró 92 % contra 85 %. Ambos cumplieron el formato en el 100 % de los casos. El tradicional fue más preciso porque sus reglas fijan la prioridad de forma determinista y es reproducible; falló en los casos ambiguos, donde no reconoce frases fuera de sus palabras clave. El generativo entendió mejor el contexto y resolvió algunos casos ambiguos, pero tendió a subir la prioridad y, ante la inyección, bajó la prioridad de HIGH a MEDIUM, aunque mantuvo SECURITY y la revisión humana que el código fuerza. Para este problema, el tradicional funcionó mejor en conjunto; lo ideal es combinarlos: el generativo para categoría y respuesta, y reglas para prioridad y seguridad.
+
+El tradicional y el ML lograron 85 % de aciertos en categoría y prioridad (11 de 13); el generativo, 46 % (6 de 13), aunque en categoría sola alcanzó 92 % frente a 85 %. Las reglas fallaron en mensajes ambiguos porque no hallan palabras clave; el ML resolvió dos de los tres, pero falló ante la inyección, que clasificó como FEATURE, y en "Ayuda, no sirve". Su 100 % interno no refleja desempeño real, pues el dataset es sintético. El generativo entiende mejor el contexto, pero tiende a subir la prioridad y, ante la inyección, la bajó de HIGH a MEDIUM. Ninguno fue perfecto: el tradicional igualó al ML sin necesitar datos de entrenamiento. Lo ideal es un híbrido: ML o LLM para la categoría, reglas para prioridad y seguridad, y revisión humana cuando la confianza sea baja.

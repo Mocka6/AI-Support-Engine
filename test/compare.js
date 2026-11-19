@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { analyze } = require('../src/analyze');
 const { isConfigured } = require('../src/generative');
+const { isAvailable } = require('../src/ml');
 const { validateResult } = require('../src/schema');
 
 // Clasificación de referencia definida ANTES de ejecutar los motores.
@@ -34,7 +35,9 @@ async function run(mode, msg) {
 (async () => {
   const modes = ['traditional'];
   if (isConfigured()) modes.push('generative');
-  else console.warn('⚠ Proveedor generativo no configurado (.env). Solo se ejecuta el motor tradicional.\n');
+  else console.warn('⚠ Proveedor generativo no configurado (.env): se omite el motor generativo.\n');
+  if (await isAvailable()) modes.push('ml');
+  else console.warn('⚠ Servicio ML no disponible (¿levantaste ml_service?): se omite el modo ml.\n');
 
   const stats = Object.fromEntries(modes.map((m) => [m, { ok: 0, cat: 0, fmt: 0 }]));
   const rows = [];
