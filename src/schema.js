@@ -1,7 +1,7 @@
 // Contrato único de respuesta para ambos motores + validaciones.
 const CATEGORIES = ['ACCESS', 'BUG', 'FEATURE', 'SECURITY'];
 const PRIORITIES = ['LOW', 'MEDIUM', 'HIGH', 'CRITICAL'];
-const MODES = ['traditional', 'generative'];
+const MODES = ['traditional', 'generative', 'ml'];
 const MAX_LEN = 2000;
 
 function validateRequest(body) {

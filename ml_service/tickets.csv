@@ -1,0 +1,201 @@
+﻿message,category
+Urgente: El código de verificación nunca llega y necesito entrar hoy.,ACCESS
+Me pide iniciar sesión una y otra vez y necesito entrar hoy.,ACCESS
+Alguien entró a mi cuenta sin autorización en el sistema de producción.,SECURITY
+Urgente: Sería útil poder exportar a Excel para nuestro equipo.,FEATURE
+"Buen día, Las notificaciones no llegan.",BUG
+Urgente: Alguien entró a mi cuenta sin autorización en el sistema de producción.,SECURITY
+"Hola, La aplicación se cierra sola cada vez que lo intento.",BUG
+Recibí un correo de phishing con el logo de ustedes.,SECURITY
+"Hola, La autenticación en dos pasos falla y necesito entrar hoy.",ACCESS
+"Buen día, Olvidé mi contraseña y necesito entrar hoy.",ACCESS
+"Hola, Quisiera poder personalizar el dashboard para nuestro equipo.",FEATURE
+"Hola, Detecté un intento de inyección SQL en el sistema de producción.",SECURITY
+"Buen día, Creo que hackearon mi cuenta y temo que haya más afectados.",SECURITY
+Urgente: Los datos no se guardan cada vez que lo intento.,BUG
+"Hola, Creo que hackearon mi cuenta según los registros de acceso.",SECURITY
+Urgente: Detecté un intento de inyección SQL ayer por la noche.,SECURITY
+Las notificaciones no llegan al abrir el módulo de reportes.,BUG
+Sospecho que hay malware en el servidor en el sistema de producción.,SECURITY
+Sería útil poder exportar a Excel en la próxima versión.,FEATURE
+Urgente: Propongo agregar un panel de estadísticas para nuestro equipo.,FEATURE
+Urgente: Mi API key quedó expuesta en un repositorio público según los registros de acceso.,SECURITY
+Urgente: Sospecho que hay malware en el servidor desde una IP desconocida.,SECURITY
+"Buen día, El sistema se congela al cargar los reportes en el celular.",BUG
+Olvidé mi contraseña.,ACCESS
+"Hola, El sistema se congela al cargar los reportes en la versión web.",BUG
+Urgente: Hay un acceso sospechoso desde otro país y no fui yo.,SECURITY
+"Hola, El código de verificación nunca llega desde mi laptop.",ACCESS
+"Hola, El código de verificación nunca llega.",ACCESS
+"Hola, Los datos no se guardan al abrir el módulo de reportes.",BUG
+Me gustaría que agreguen modo oscuro.,FEATURE
+La página se queda en blanco.,BUG
+"Hola, Hay un acceso sospechoso desde otro país y temo que haya más afectados.",SECURITY
+No puedo ingresar al panel y necesito entrar hoy.,ACCESS
+"Buen día, No me deja entrar a mi cuenta en el navegador Chrome.",ACCESS
+Propongo agregar un panel de estadísticas.,FEATURE
+Urgente: Podrían añadir filtros por fecha porque lo usamos a diario.,FEATURE
+"Hola, El botón de enviar no funciona en el celular.",BUG
+"Hola, El botón de enviar no funciona en la versión web.",BUG
+Solicito una integración con Slack como mejora al producto.,FEATURE
+"Hola, No puedo ingresar al panel con mi correo de trabajo.",ACCESS
+"Buen día, El botón de enviar no funciona desde la última actualización.",BUG
+"Hola, Me sale un mensaje de error inesperado al adjuntar un archivo.",BUG
+"Hola, Se filtraron datos de clientes en el sistema de producción.",SECURITY
+"Hola, Vi un ataque de fuerza bruta en los registros y temo que haya más afectados.",SECURITY
+"Hola, Alguien entró a mi cuenta sin autorización hay que revisarlo cuanto antes.",SECURITY
+"Hola, Se filtraron datos de clientes.",SECURITY
+"Buen día, Sospecho que hay malware en el servidor y temo que haya más afectados.",SECURITY
+"Buen día, El código de verificación nunca llega desde mi laptop.",ACCESS
+"Buen día, Las notificaciones no llegan desde la última actualización.",BUG
+Necesitamos una opción para importar contactos si es posible.,FEATURE
+Me sale credenciales incorrectas.,ACCESS
+Urgente: Encontré una vulnerabilidad en el formulario de login.,SECURITY
+"Buen día, La autenticación en dos pasos falla en el navegador Chrome.",ACCESS
+"Hola, El enlace para restablecer la contraseña no funciona en el navegador Chrome.",ACCESS
+Podrían implementar notificaciones por correo.,FEATURE
+"Buen día, Detecté un intento de inyección SQL hay que revisarlo cuanto antes.",SECURITY
+No me deja entrar a mi cuenta después de cambiar la contraseña.,ACCESS
+"Hola, Los datos no se guardan.",BUG
+"Buen día, Podrían implementar notificaciones por correo.",FEATURE
+Urgente: Creo que hackearon mi cuenta.,SECURITY
+Urgente: Propongo agregar un panel de estadísticas para ahorrar tiempo.,FEATURE
+La autenticación en dos pasos falla con mi correo de trabajo.,ACCESS
+Se filtraron datos de clientes en el sistema de producción.,SECURITY
+"Hola, Sería genial tener una app para tablet si es posible.",FEATURE
+Urgente: Necesitamos una opción para importar contactos para los reportes.,FEATURE
+Urgente: El enlace para restablecer la contraseña no funciona con mi correo de trabajo.,ACCESS
+Creo que hackearon mi cuenta desde una IP desconocida.,SECURITY
+"Hola, La app va muy lenta en el celular.",BUG
+"Hola, Me sale un mensaje de error inesperado y perdí mi trabajo.",BUG
+"Hola, Sugiero agregar soporte para varios idiomas como mejora al producto.",FEATURE
+Urgente: El botón de enviar no funciona cada vez que lo intento.,BUG
+Urgente: El botón de enviar no funciona al abrir el módulo de reportes.,BUG
+Me sale un mensaje de error inesperado cada vez que lo intento.,BUG
+"Hola, Sería útil poder exportar a Excel porque lo usamos a diario.",FEATURE
+Urgente: El enlace para restablecer la contraseña no funciona después de cambiar la contraseña.,ACCESS
+"Buen día, Sugiero agregar soporte para varios idiomas.",FEATURE
+"Buen día, Solicito una integración con Slack en la próxima versión.",FEATURE
+"Buen día, Me gustaría que agreguen modo oscuro como mejora al producto.",FEATURE
+Urgente: Me sale credenciales incorrectas desde mi laptop.,ACCESS
+"Buen día, Los datos no se guardan cada vez que lo intento.",BUG
+"Buen día, La app va muy lenta en la versión web.",BUG
+"Hola, El sistema se congela al cargar los reportes cada vez que lo intento.",BUG
+"Buen día, Encontré una vulnerabilidad en el formulario de login según los registros de acceso.",SECURITY
+"Hola, La aplicación se cierra sola y perdí mi trabajo.",BUG
+"Hola, Detecté un intento de inyección SQL ayer por la noche.",SECURITY
+Sería genial tener una app para tablet si es posible.,FEATURE
+Sugiero agregar soporte para varios idiomas si es posible.,FEATURE
+"Buen día, Propongo agregar un panel de estadísticas como mejora al producto.",FEATURE
+Urgente: La app va muy lenta y perdí mi trabajo.,BUG
+No me deja entrar a mi cuenta con mi correo de trabajo.,ACCESS
+Urgente: No puedo ingresar al panel en el navegador Chrome.,ACCESS
+"Hola, Propongo agregar un panel de estadísticas.",FEATURE
+"Hola, Los datos no se guardan al adjuntar un archivo.",BUG
+Olvidé mi contraseña en el navegador Chrome.,ACCESS
+El botón de enviar no funciona al abrir el módulo de reportes.,BUG
+Detecté un intento de inyección SQL en el sistema de producción.,SECURITY
+Urgente: Olvidé mi contraseña desde mi laptop.,ACCESS
+El botón de enviar no funciona cada vez que lo intento.,BUG
+Sospecho que hay malware en el servidor.,SECURITY
+"Hola, Detecté un intento de inyección SQL hay que revisarlo cuanto antes.",SECURITY
+"Buen día, Encontré una vulnerabilidad en el formulario de login ayer por la noche.",SECURITY
+"Hola, La app va muy lenta al adjuntar un archivo.",BUG
+Urgente: Aparece un error 500 al guardar y perdí mi trabajo.,BUG
+No puedo iniciar sesión desde ayer.,ACCESS
+La autenticación en dos pasos falla desde la app móvil.,ACCESS
+Urgente: Podrían añadir filtros por fecha.,FEATURE
+El botón de enviar no funciona en la versión web.,BUG
+Urgente: Quisiera poder personalizar el dashboard porque lo usamos a diario.,FEATURE
+Urgente: Solicito una integración con Slack si es posible.,FEATURE
+Urgente: Me sale un mensaje de error inesperado desde la última actualización.,BUG
+"Hola, La exportación falla a la mitad en la versión web.",BUG
+"Buen día, No puedo ingresar al panel.",ACCESS
+"Buen día, La aplicación se cierra sola al abrir el módulo de reportes.",BUG
+El enlace para restablecer la contraseña no funciona y necesito entrar hoy.,ACCESS
+"Buen día, Podrían implementar notificaciones por correo si es posible.",FEATURE
+"Hola, El botón de enviar no funciona.",BUG
+"Buen día, No me deja entrar a mi cuenta con mi correo de trabajo.",ACCESS
+"Hola, Los datos no se guardan desde la última actualización.",BUG
+"Hola, Creo que hackearon mi cuenta hay que revisarlo cuanto antes.",SECURITY
+"Hola, Podrían añadir filtros por fecha como mejora al producto.",FEATURE
+La página se queda en blanco y perdí mi trabajo.,BUG
+"Hola, Mi cuenta aparece bloqueada en el navegador Chrome.",ACCESS
+"Hola, Mi API key quedó expuesta en un repositorio público desde una IP desconocida.",SECURITY
+Encontré una vulnerabilidad en el formulario de login y no fui yo.,SECURITY
+"Hola, Me gustaría que agreguen modo oscuro.",FEATURE
+El sistema se congela al cargar los reportes en la versión web.,BUG
+Me sale credenciales incorrectas con mi correo de trabajo.,ACCESS
+"Buen día, Mi cuenta aparece bloqueada desde la app móvil.",ACCESS
+"Hola, Olvidé mi contraseña después de cambiar la contraseña.",ACCESS
+"Hola, Sugiero agregar soporte para varios idiomas.",FEATURE
+Urgente: El código de verificación nunca llega desde mi laptop.,ACCESS
+Me gustaría que agreguen modo oscuro en la próxima versión.,FEATURE
+"Buen día, Sería útil poder exportar a Excel si es posible.",FEATURE
+Urgente: Creo que hackearon mi cuenta desde una IP desconocida.,SECURITY
+Mi API key quedó expuesta en un repositorio público según los registros de acceso.,SECURITY
+"Buen día, La app va muy lenta en el celular.",BUG
+Detecté un intento de inyección SQL.,SECURITY
+"Hola, Mi cuenta aparece bloqueada y necesito entrar hoy.",ACCESS
+"Hola, El botón de enviar no funciona y perdí mi trabajo.",BUG
+"Buen día, La aplicación se cierra sola al adjuntar un archivo.",BUG
+"Hola, Detecté un intento de inyección SQL desde una IP desconocida.",SECURITY
+"Buen día, Me pide iniciar sesión una y otra vez desde ayer.",ACCESS
+Urgente: Se filtraron datos de clientes.,SECURITY
+Urgente: Necesitamos una opción para importar contactos para nuestro equipo.,FEATURE
+Se filtraron datos de clientes y no fui yo.,SECURITY
+Urgente: La app va muy lenta en el celular.,BUG
+"Hola, Sería genial tener una app para tablet.",FEATURE
+Urgente: La exportación falla a la mitad y perdí mi trabajo.,BUG
+"Buen día, El sistema se congela al cargar los reportes al abrir el módulo de reportes.",BUG
+No puedo ingresar al panel desde la app móvil.,ACCESS
+Urgente: Los datos no se guardan desde la última actualización.,BUG
+Sospecho que hay malware en el servidor ayer por la noche.,SECURITY
+Urgente: Detecté un intento de inyección SQL en el sistema de producción.,SECURITY
+Urgente: Podrían añadir filtros por fecha para ahorrar tiempo.,FEATURE
+La app va muy lenta.,BUG
+Podrían implementar notificaciones por correo en la próxima versión.,FEATURE
+"Hola, Necesitamos una opción para importar contactos si es posible.",FEATURE
+Urgente: Alguien entró a mi cuenta sin autorización y no fui yo.,SECURITY
+"Buen día, El código de verificación nunca llega desde la app móvil.",ACCESS
+"Buen día, El sistema se congela al cargar los reportes desde la última actualización.",BUG
+"Buen día, El enlace para restablecer la contraseña no funciona después de cambiar la contraseña.",ACCESS
+"Hola, Me sale credenciales incorrectas después de cambiar la contraseña.",ACCESS
+"Hola, Me gustaría que agreguen modo oscuro para nuestro equipo.",FEATURE
+No me deja entrar a mi cuenta y necesito entrar hoy.,ACCESS
+"Hola, Se filtraron datos de clientes según los registros de acceso.",SECURITY
+Urgente: Solicito una integración con Slack para los reportes.,FEATURE
+"Buen día, Propongo agregar un panel de estadísticas porque lo usamos a diario.",FEATURE
+Urgente: Me sale credenciales incorrectas y necesito entrar hoy.,ACCESS
+Se filtraron datos de clientes.,SECURITY
+Me gustaría que agreguen modo oscuro como mejora al producto.,FEATURE
+"Buen día, Las notificaciones no llegan en la versión web.",BUG
+Urgente: Me pide iniciar sesión una y otra vez con mi correo de trabajo.,ACCESS
+Urgente: Recibí un correo de phishing con el logo de ustedes y temo que haya más afectados.,SECURITY
+"Buen día, Olvidé mi contraseña.",ACCESS
+"Buen día, Sugiero agregar soporte para varios idiomas para los reportes.",FEATURE
+"Buen día, Solicito una integración con Slack para los reportes.",FEATURE
+Urgente: Hay un acceso sospechoso desde otro país y temo que haya más afectados.,SECURITY
+"Hola, Olvidé mi contraseña desde mi laptop.",ACCESS
+"Buen día, La página se queda en blanco en el celular.",BUG
+"Hola, No puedo iniciar sesión desde la app móvil.",ACCESS
+"Buen día, La app va muy lenta desde la última actualización.",BUG
+Urgente: Sería útil poder exportar a Excel para ahorrar tiempo.,FEATURE
+"Hola, El código de verificación nunca llega y necesito entrar hoy.",ACCESS
+"Hola, No puedo ingresar al panel en el navegador Chrome.",ACCESS
+"Buen día, Mi API key quedó expuesta en un repositorio público.",SECURITY
+Urgente: Se filtraron datos de clientes hay que revisarlo cuanto antes.,SECURITY
+"Buen día, Sospecho que hay malware en el servidor.",SECURITY
+Me sale credenciales incorrectas y necesito entrar hoy.,ACCESS
+Se filtraron datos de clientes hay que revisarlo cuanto antes.,SECURITY
+Podrían implementar notificaciones por correo para nuestro equipo.,FEATURE
+Solicito una integración con Slack.,FEATURE
+"Hola, Me gustaría que agreguen modo oscuro en la próxima versión.",FEATURE
+La exportación falla a la mitad y perdí mi trabajo.,BUG
+Urgente: Necesitamos una opción para importar contactos en la próxima versión.,FEATURE
+"Hola, Recibí un correo de phishing con el logo de ustedes desde una IP desconocida.",SECURITY
+Urgente: Hay un acceso sospechoso desde otro país hay que revisarlo cuanto antes.,SECURITY
+Urgente: No puedo ingresar al panel después de cambiar la contraseña.,ACCESS
+Urgente: La autenticación en dos pasos falla y necesito entrar hoy.,ACCESS
+Quisiera poder personalizar el dashboard si es posible.,FEATURE
+"Hola, Podrían implementar notificaciones por correo.",FEATURE

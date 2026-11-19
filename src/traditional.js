@@ -44,6 +44,15 @@ const RESPONSES = {
 };
 const FALLBACK_RESPONSE = 'Gracias por contactarnos. No pudimos determinar con certeza el tipo de solicitud, por lo que será revisada por una persona de nuestro equipo. ¿Puede darnos más detalles?';
 
+// Prioridad por reglas (reutilizada por el modo ml). Recibe texto ya normalizado.
+function priorityFor(category, t) {
+  let priority = BASE_PRIORITY[category];
+  if (category === 'SECURITY' && CRITICAL_SECURITY.test(t)) priority = 'CRITICAL';
+  else if (category === 'BUG' && CRITICAL_BUG.test(t)) priority = 'CRITICAL';
+  else if (URGENT.test(t) && priority !== 'CRITICAL') priority = LEVELS[Math.min(LEVELS.indexOf(priority) + 1, 2)];
+  return priority;
+}
+
 function analyzeTraditional(message) {
   const t = norm(message);
   const scores = {};
@@ -55,10 +64,7 @@ function analyzeTraditional(message) {
     return { category: 'BUG', priority: 'LOW', response: FALLBACK_RESPONSE, requiresHumanReview: true, mode: 'traditional' };
   }
 
-  let priority = BASE_PRIORITY[best];
-  if (best === 'SECURITY' && CRITICAL_SECURITY.test(t)) priority = 'CRITICAL';
-  else if (best === 'BUG' && CRITICAL_BUG.test(t)) priority = 'CRITICAL';
-  else if (URGENT.test(t) && priority !== 'CRITICAL') priority = LEVELS[Math.min(LEVELS.indexOf(priority) + 1, 2)];
+  const priority = priorityFor(best, t);
 
   return {
     category: best,
@@ -69,4 +75,4 @@ function analyzeTraditional(message) {
   };
 }
 
-module.exports = { analyzeTraditional };
+module.exports = { analyzeTraditional, priorityFor, RESPONSES };

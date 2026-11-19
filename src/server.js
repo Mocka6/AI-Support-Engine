@@ -40,7 +40,7 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, await analyze(body.message.trim(), body.mode));
   } catch (err) {
     if (err.status === 413) return send(res, 413, { error: err.message });
-    if (err instanceof ProviderError) return send(res, 502, { error: 'El motor generativo no está disponible', detail: err.message });
+    if (err instanceof ProviderError) return send(res, 502, { error: 'El motor de IA no está disponible', detail: err.message });
     console.error('Error interno:', err.message); // nunca se loguean headers ni claves
     return send(res, 500, { error: 'Error interno del servidor' });
   }
